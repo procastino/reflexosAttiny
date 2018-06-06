@@ -386,7 +386,7 @@ U 1 1 5B048E78
 P 6700 2600
 F 0 "SW2" H 6700 2750 50  0000 C CNN
 F 1 "SW_DIP_x01" H 6700 2450 50  0000 C CNN
-F 2 "myfootprint:switchSlide" H 6700 2600 50  0001 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_horizontal_Diameter6mm_Amidon-T20" H 6700 2600 50  0001 C CNN
 F 3 "" H 6700 2600 50  0001 C CNN
 	1    6700 2600
 	1    0    0    -1  
