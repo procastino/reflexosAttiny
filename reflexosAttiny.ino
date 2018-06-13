@@ -4,8 +4,8 @@
     int led1=0;
     int led2=1;
     int led3=2;
-    int buzzer=4;
     int boton=3;
+    int buzzer=4;
 
 //definimos as variables que necesitaremos para ter conta do tempo
     long tempoActual=0;
