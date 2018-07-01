@@ -199,10 +199,10 @@ void apagaTodos() {
 //funcion que acende os leds correspondentes do resto
 void acendeResto() {
   if (bitRead(resto,0)) {
-    digitalWrite(led1,HIGH);
+    digitalWrite(led3,HIGH);
     }
     else {
-        digitalWrite(led1,LOW);
+        digitalWrite(led3,LOW);
     }
     if (bitRead(resto,1)) {
       digitalWrite(led2,HIGH);
@@ -211,10 +211,10 @@ void acendeResto() {
             digitalWrite(led2,LOW);
       }
     if (bitRead(resto,2)) {
-        digitalWrite(led3,HIGH);
+        digitalWrite(led1,HIGH);
         }
         else {
-            digitalWrite(led3,LOW);
+            digitalWrite(led1,LOW);
             };
 }
     
