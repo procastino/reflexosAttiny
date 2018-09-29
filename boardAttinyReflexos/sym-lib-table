@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name attinyReflexos-rescue)(type Legacy)(uri ${KIPRJMOD}/attinyReflexos-rescue.lib)(options "")(descr ""))
+)

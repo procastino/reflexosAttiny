@@ -1,13 +1,14 @@
-EESchema-LIBRARY Version 2.4
+EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# attinyReflexos-rescue:ATTINY85-20PU
+# ATTINY25-20PU
 #
-DEF attinyReflexos-rescue:ATTINY85-20PU U 0 40 Y Y 1 F N
+DEF ATTINY25-20PU U 0 40 Y Y 1 F N
 F0 "U" -1150 400 50 H V C CNN
-F1 "attinyReflexos-rescue:ATTINY85-20PU" 1000 -400 50 H V C CNN
+F1 "ATTINY25-20PU" 1000 -400 50 H V C CNN
 F2 "Housings_DIP:DIP-8_W7.62mm" 1000 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
+ALIAS ATTINY45-20PU ATTINY85-20PU
 DRAW
 S -1200 350 1200 -350 0 1 10 f
 X PB5(~RESET~/dW/ADC0/PCINT5) 1 -1350 -250 150 R 40 40 1 1 B
@@ -21,11 +22,11 @@ X VCC 8 1350 250 150 L 40 40 1 1 W
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:Battery_Cell
+# Battery_Cell
 #
-DEF attinyReflexos-rescue:Battery_Cell BT 0 0 N N 1 F N
+DEF Battery_Cell BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "attinyReflexos-rescue:Battery_Cell" 100 0 50 H V L CNN
+F1 "Battery_Cell" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -40,11 +41,11 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:Conn_01x03_Female
+# Conn_01x03_Female
 #
-DEF attinyReflexos-rescue:Conn_01x03_Female J 0 40 Y N 1 F N
+DEF Conn_01x03_Female J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "attinyReflexos-rescue:Conn_01x03_Female" 0 -200 50 H V C CNN
+F1 "Conn_01x03_Female" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -66,11 +67,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:Conn_01x06_Female
+# Conn_01x06_Female
 #
-DEF attinyReflexos-rescue:Conn_01x06_Female J 0 40 Y N 1 F N
+DEF Conn_01x06_Female J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "attinyReflexos-rescue:Conn_01x06_Female" 0 -400 50 H V C CNN
+F1 "Conn_01x06_Female" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -101,11 +102,24 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:LED
+# GND
 #
-DEF attinyReflexos-rescue:LED D 0 40 Y N 1 F N
+DEF GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# LED
+#
+DEF LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "attinyReflexos-rescue:LED" 0 -100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -122,11 +136,24 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:R
+# PWR_FLAG
 #
-DEF attinyReflexos-rescue:R R 0 0 N Y 1 F N
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X pwr 1 0 0 0 U 50 50 0 0 w
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+ENDDRAW
+ENDDEF
+#
+# R
+#
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "attinyReflexos-rescue:R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -140,11 +167,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:SW_DIP_x01
+# SW_DIP_x01
 #
-DEF attinyReflexos-rescue:SW_DIP_x01 SW 0 0 Y N 1 F N
+DEF SW_DIP_x01 SW 0 0 Y N 1 F N
 F0 "SW" 0 150 50 H V C CNN
-F1 "attinyReflexos-rescue:SW_DIP_x01" 0 -150 50 H V C CNN
+F1 "SW_DIP_x01" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -153,18 +180,18 @@ $ENDFPLIST
 DRAW
 C -80 0 20 0 0 0 N
 C 80 0 20 0 0 0 N
-S -150 100 150 -100 0 1 10 f
 P 2 0 0 0 -60 5 93 46 N
+S -150 100 150 -100 0 1 10 f
 X ~ 1 -300 0 200 R 50 50 1 1 P
 X ~ 2 300 0 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# attinyReflexos-rescue:SW_DPST_x2
+# SW_DPST_x2
 #
-DEF attinyReflexos-rescue:SW_DPST_x2 SW 0 0 Y N 2 F N
+DEF SW_DPST_x2 SW 0 0 Y N 2 F N
 F0 "SW" 0 125 50 H V C CNN
-F1 "attinyReflexos-rescue:SW_DPST_x2" 0 -100 50 H V C CNN
+F1 "SW_DPST_x2" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -178,37 +205,11 @@ X B 4 200 0 100 L 50 50 2 1 I
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# VCC
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:PWR_FLAG
-#
-DEF power:PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "power:PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
-ENDDRAW
-ENDDEF
-#
-# power:VCC
-#
-DEF power:VCC #PWR 0 0 Y Y 1 F P
+DEF VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VCC" 0 150 50 H V C CNN
+F1 "VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
