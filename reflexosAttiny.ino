@@ -50,6 +50,8 @@ void setup() {
       pinMode(led2,OUTPUT);
       pinMode(led3,OUTPUT);
       pinMode(boton,INPUT);
+      //creamos unha semente a partir da lectura do pin desconectado para conseguir verdadeira aleatoriedade
+      randomSeed(analogRead(A2));
       //conta atras antes de comezar
       secuenciaInicio();
      }
