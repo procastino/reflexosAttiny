@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:attinyReflexos-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -47,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATTINY85-20PU U1
+L attinyReflexos-rescue:ATTINY85-20PU U1
 U 1 1 59CAB53C
 P 4650 2850
 F 0 "U1" H 3500 3250 50  0000 C CNN
@@ -58,7 +26,7 @@ F 3 "" H 4650 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L attinyReflexos-rescue:R R3
 U 1 1 59CAB571
 P 1700 3050
 F 0 "R3" V 1780 3050 50  0000 C CNN
@@ -69,7 +37,7 @@ F 3 "" H 1700 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L attinyReflexos-rescue:R R4
 U 1 1 59CAB662
 P 2100 3050
 F 0 "R4" V 2180 3050 50  0000 C CNN
@@ -80,7 +48,7 @@ F 3 "" H 2100 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L attinyReflexos-rescue:R R2
 U 1 1 59CAB6B1
 P 1250 3050
 F 0 "R2" V 1330 3050 50  0000 C CNN
@@ -91,7 +59,7 @@ F 3 "" H 1250 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L attinyReflexos-rescue:LED D2
 U 1 1 59CAB6CC
 P 1700 3450
 F 0 "D2" H 1700 3550 50  0000 C CNN
@@ -102,7 +70,7 @@ F 3 "" H 1700 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D1
+L attinyReflexos-rescue:LED D1
 U 1 1 59CAB7D2
 P 1250 3450
 F 0 "D1" H 1250 3550 50  0000 C CNN
@@ -113,7 +81,7 @@ F 3 "" H 1250 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D3
+L attinyReflexos-rescue:LED D3
 U 1 1 59CAB7FE
 P 2100 3450
 F 0 "D3" H 2100 3550 50  0000 C CNN
@@ -124,7 +92,7 @@ F 3 "" H 2100 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_DPST_x2 SW1
+L attinyReflexos-rescue:SW_DPST_x2 SW1
 U 1 1 59CAB9A7
 P 2500 3850
 F 0 "SW1" H 2500 3975 50  0000 C CNN
@@ -135,7 +103,7 @@ F 3 "" H 2500 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Battery_Cell BT1
+L attinyReflexos-rescue:Battery_Cell BT1
 U 1 1 59D92230
 P 7200 2900
 F 0 "BT1" H 7300 3000 50  0000 L CNN
@@ -146,7 +114,7 @@ F 3 "" V 7200 2960 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5A74B21D
 P 1250 3750
 F 0 "#PWR01" H 1250 3500 50  0001 C CNN
@@ -157,7 +125,7 @@ F 3 "" H 1250 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L attinyReflexos-rescue:R R1
 U 1 1 5A74B427
 P 2500 4700
 F 0 "R1" V 2580 4700 50  0000 C CNN
@@ -168,7 +136,7 @@ F 3 "" H 2500 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR02
+L power:VCC #PWR02
 U 1 1 5A74B55B
 P 2500 3550
 F 0 "#PWR02" H 2500 3400 50  0001 C CNN
@@ -179,7 +147,7 @@ F 3 "" H 2500 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 5A74B1B1
 P 2100 3750
 F 0 "#PWR03" H 2100 3500 50  0001 C CNN
@@ -190,7 +158,7 @@ F 3 "" H 2100 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 5A74B1E4
 P 1700 3750
 F 0 "#PWR04" H 1700 3500 50  0001 C CNN
@@ -201,7 +169,7 @@ F 3 "" H 1700 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 5A74B35F
 P 2500 5400
 F 0 "#PWR05" H 2500 5150 50  0001 C CNN
@@ -212,7 +180,7 @@ F 3 "" H 2500 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR06
+L power:VCC #PWR06
 U 1 1 5A74BBC2
 P 6250 2450
 F 0 "#PWR06" H 6250 2300 50  0001 C CNN
@@ -223,7 +191,7 @@ F 3 "" H 6250 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 5A74BC27
 P 7200 3150
 F 0 "#PWR07" H 7200 2900 50  0001 C CNN
@@ -234,7 +202,7 @@ F 3 "" H 7200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG08
+L power:PWR_FLAG #FLG08
 U 1 1 5A74BF8B
 P 1300 4700
 F 0 "#FLG08" H 1300 4775 50  0001 C CNN
@@ -245,7 +213,7 @@ F 3 "" H 1300 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG09
+L power:PWR_FLAG #FLG09
 U 1 1 5A74BFFF
 P 1850 4850
 F 0 "#FLG09" H 1850 4925 50  0001 C CNN
@@ -256,7 +224,7 @@ F 3 "" H 1850 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 5A74C035
 P 1300 4850
 F 0 "#PWR010" H 1300 4600 50  0001 C CNN
@@ -267,7 +235,7 @@ F 3 "" H 1300 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR011
+L power:VCC #PWR011
 U 1 1 5A74C064
 P 1850 4700
 F 0 "#PWR011" H 1850 4550 50  0001 C CNN
@@ -278,7 +246,7 @@ F 3 "" H 1850 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x06_Female J1
+L attinyReflexos-rescue:Conn_01x06_Female J1
 U 1 1 5B04506B
 P 7050 3800
 F 0 "J1" H 7050 4100 50  0000 C CNN
@@ -289,18 +257,18 @@ F 3 "" H 7050 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DIP_x01 SW2
+L attinyReflexos-rescue:SW_DIP_x01 SW2
 U 1 1 5B048E78
 P 6700 2600
 F 0 "SW2" H 6700 2750 50  0000 C CNN
 F 1 "SW_DIP_x01" H 6700 2450 50  0000 C CNN
-F 2 "myfootprint:switchSlide" H 6700 2600 50  0001 C CNN
+F 2 "" H 6700 2600 50  0001 C CNN
 F 3 "" H 6700 2600 50  0001 C CNN
 	1    6700 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x03_Female J2
+L attinyReflexos-rescue:Conn_01x03_Female J2
 U 1 1 5B393E6D
 P 3800 2000
 F 0 "J2" H 3800 2200 50  0000 C CNN
@@ -311,7 +279,7 @@ F 3 "" H 3800 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5B394187
 P 3050 1750
 F 0 "#PWR012" H 3050 1500 50  0001 C CNN
@@ -322,7 +290,7 @@ F 3 "" H 3050 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR013
+L power:VCC #PWR013
 U 1 1 5B3941B7
 P 2850 1850
 F 0 "#PWR013" H 2850 1700 50  0001 C CNN
@@ -339,11 +307,11 @@ Wire Wire Line
 Wire Wire Line
 	1250 3200 1250 3300
 Wire Wire Line
-	6000 2600 6400 2600
+	6000 2600 6050 2600
 Wire Wire Line
-	7200 3000 7200 3150
+	7200 3000 7200 3100
 Wire Wire Line
-	6000 3100 7200 3100
+	6000 3100 6700 3100
 Wire Wire Line
 	2100 3600 2100 3750
 Wire Wire Line
@@ -355,7 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 3550 2500 3650
 Wire Wire Line
-	2500 4050 2500 4550
+	2500 4050 2500 4250
 Connection ~ 2500 4250
 Wire Wire Line
 	1850 4700 1850 4850
@@ -391,11 +359,11 @@ Wire Wire Line
 	3200 3800 3200 2600
 Connection ~ 3200 2600
 Wire Wire Line
-	1250 2600 3300 2600
+	1250 2600 3200 2600
 Wire Wire Line
-	1700 2700 3300 2700
+	1700 2700 3100 2700
 Wire Wire Line
-	2100 2800 3300 2800
+	2100 2800 3000 2800
 Wire Wire Line
 	1250 2600 1250 2900
 Wire Wire Line
@@ -428,4 +396,20 @@ Connection ~ 7200 3100
 Wire Wire Line
 	6250 2450 6250 2600
 Connection ~ 6250 2600
+Wire Wire Line
+	2500 4250 2500 4550
+Wire Wire Line
+	3100 2700 3300 2700
+Wire Wire Line
+	3000 2800 3300 2800
+Wire Wire Line
+	6700 3100 7200 3100
+Wire Wire Line
+	6050 2600 6250 2600
+Wire Wire Line
+	3200 2600 3300 2600
+Wire Wire Line
+	7200 3100 7200 3150
+Wire Wire Line
+	6250 2600 6400 2600
 $EndSCHEMATC
